@@ -1,1 +1,1 @@
-include myapp/swagger.yaml
+include myapp/openapi.json

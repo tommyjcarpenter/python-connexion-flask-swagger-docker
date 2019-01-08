@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='myapp',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(exclude=["tests.*", "tests"]),
     author="",
     author_email="",
@@ -15,6 +15,8 @@ setup(
         'console_scripts': [
             'run.py=myapp.run:main']
     },
-    install_requires=["requests", "Flask", "connexion"],
+    install_requires=["requests",
+                      "Flask",
+                      "connexion[swagger-ui]"],
     include_package_data=True
 )

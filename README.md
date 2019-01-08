@@ -14,11 +14,11 @@ pip install .; run.py
 # Docker
 ## building
 ```
-docker build -t myapp:0.0.1 .
+docker build -t myapp:X.Y.Z .
 ```
 ## running
 ```
-docker run -p 10000:10000 myapp:0.0.1
+docker run -p 10000:10000 myapp:X.Y.Z
 ```
 
 # Running in Docker
