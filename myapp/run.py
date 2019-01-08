@@ -9,7 +9,7 @@ def main():
     """Entrypoint"""
     try:
         app = connexion.App(__name__, specification_dir='.')
-        app.add_api('openapi.json', arguments={'title': 'My Title'})
+        app.add_api('openapi.yaml', arguments={'title': 'My Title'})
         app.run(host='0.0.0.0', port=10000, debug=False)
     except Exception as exc:
         _logger.error("Fatal error. Could not start webserver due to: %s", exc)
