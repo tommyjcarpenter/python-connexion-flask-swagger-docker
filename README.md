@@ -1,5 +1,11 @@
 # My API
 
+# Tech Stack
+- OpenAPI3
+- Connexion
+- Flask
+- Python3.7
+
 # Unit Testing
 ```
 tox
