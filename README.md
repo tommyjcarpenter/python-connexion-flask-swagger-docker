@@ -21,10 +21,7 @@ docker build -t myapp:X.Y.Z .
 docker run -p 10000:10000 myapp:X.Y.Z
 ```
 
-# Running in Docker
-TODO
-
-## Test CURLs
+# Test CURLs
 ```
 curl -v -H "Content-Type: application/json" -X POST localhost:10000/baz -d '{"query_string" : "amaaaaaaazing"}'
 ```

@@ -1,4 +1,5 @@
 import logging
+import connexion
 
 
 def get_module_logger(mod_name):
@@ -13,3 +14,7 @@ def get_module_logger(mod_name):
     logger.addHandler(handler)
     logger.setLevel(logging.DEBUG)
     return logger
+
+
+app = connexion.App(__name__, specification_dir='.')
+app.add_api('openapi.yaml', arguments={'title': 'My Title'})
