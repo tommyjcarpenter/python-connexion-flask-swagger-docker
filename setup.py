@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='myapp',
-    version='0.0.3',
+    version='0.0.4',
     packages=find_packages(exclude=["tests.*", "tests"]),
     author="",
     author_email="",
@@ -16,6 +16,8 @@ setup(
     },
     install_requires=["requests",
                       "Flask",
-                      "connexion[swagger-ui]"],
+                      "connexion[swagger-ui]",
+                      "gevent"],
+    zip_safe=False,
     package_data={'myapp': ['openapi.yaml']}
 )

@@ -3,8 +3,10 @@
 # Tech Stack
 - OpenAPI3
 - Connexion
-- Flask
+- Flask, with Gevent serving
 - Python3.7
+
+See: http://flask.pocoo.org/docs/1.0/deploying/wsgi-standalone/#uwsgi
 
 # Unit Testing
 ```
